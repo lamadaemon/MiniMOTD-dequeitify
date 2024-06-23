@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "${modid}",
+  "version": "${version}",
+  "name": "${name}",
+  "description": "${description}",
+  "authors": [
+    "jmp"
+  ],
+  "contact": {
+    "sources": "https://github.com/lamadaemon/MiniMOTD-dequeitify"
+  },
+  "license": "MIT",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "xyz.jpenilla.minimotd.fabric.MiniMOTDFabric"
+    ]
+  },
+  "mixins": [
+    "minimotd-fabric.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.10",
+    "fabric": "*",
+    "minecraft": "~1.21"
+  }
+}

@@ -1,6 +1,5 @@
 plugins {
   alias(libs.plugins.blossom)
-  id("minimotd.base-conventions")
 }
 
 tasks.jar {
@@ -21,7 +20,6 @@ dependencies {
   compileOnlyApi(libs.slf4jApi)
   compileOnlyApi(libs.checkerQual)
   compileOnlyApi(libs.gson)
-  testImplementation(libs.gson)
 }
 
 sourceSets.main {
